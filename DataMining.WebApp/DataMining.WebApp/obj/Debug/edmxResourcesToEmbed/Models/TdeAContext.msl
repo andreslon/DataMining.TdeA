@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbProcedimiento_TdeAModelStoreContainer" CdmEntityContainer="TdeAEntities">
+    <EntitySetMapping Name="Tbl_Valores">
+      <EntityTypeMapping TypeName="DbProcedimiento_TdeAModel.Tbl_Valores">
+        <MappingFragment StoreEntitySet="Tbl_Valores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Valor1" ColumnName="Valor1" />
+          <ScalarProperty Name="Valor2" ColumnName="Valor2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ImportDataValues" FunctionName="DbProcedimiento_TdeAModel.Store.ImportDataValues" />
+  </EntityContainerMapping>
+</Mapping>

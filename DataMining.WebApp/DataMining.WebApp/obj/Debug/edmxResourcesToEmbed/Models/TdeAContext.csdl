@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbProcedimiento_TdeAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_Valores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Valor1" Type="Int32" />
+    <Property Name="Valor2" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="TdeAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_Valores" EntityType="Self.Tbl_Valores" />
+    <FunctionImport Name="ImportDataValues" ReturnType="Collection(Int32)" />
+  </EntityContainer>
+</Schema>
